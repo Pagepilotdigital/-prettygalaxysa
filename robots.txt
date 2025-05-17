@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://prettygalaxysa.co.za/sitemap.xml
