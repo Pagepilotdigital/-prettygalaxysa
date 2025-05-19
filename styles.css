@@ -74,15 +74,28 @@ body {
 }
 
 /* Portfolio Image Styles */
+.portfolio {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
 .portfolio img {
     width: 100%;
-    max-width: 800px;
+    max-width: 400px;
     height: auto;
     display: block;
     margin: 0 auto;
     border-radius: 15px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
     object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio img:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 /* Blog Post Styles */
