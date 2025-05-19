@@ -4,81 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pretty Galaxy SA - Portfolio</title>
+    <meta name="description" content="Explore the stunning makeup work by Pretty Galaxy SA, a professional makeup artist in Pretoria. From soft glam to bold face beats, see the artistry behind every look.">
+    <meta name="keywords" content="makeup portfolio, professional makeup artist, Pretoria makeup, bridal makeup, face beat, soft glam, makeup inspiration, makeup artist portfolio">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Pretty Galaxy SA">
+    <link rel="icon" href="favicon.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script>
-        let currentImageIndex = 0;
-        const imagePaths = [
-            "portfolio/1.jpg",
-            "portfolio/2.jpg",
-            "portfolio/3.jpg",
-            "portfolio/4.jpg",
-            "portfolio/5.jpg",
-            "portfolio/6.jpg",
-            "portfolio/7.jpg",
-            "portfolio/8.jpg",
-            "portfolio/9.jpg",
-            "portfolio/10.jpg",
-            "portfolio/11.jpg",
-            "portfolio/12.jpg"
-        ];
-
-        function openLightbox(src) {
-            const lightbox = document.getElementById('lightbox');
-            const lightboxImg = document.getElementById('lightbox-img');
-            lightboxImg.src = src;
-            currentImageIndex = imagePaths.indexOf(src);
-            lightbox.classList.add('active');
-        }
-
-        function closeLightbox() {
-            const lightbox = document.getElementById('lightbox');
-            lightbox.classList.remove('active');
-        }
-
-        function nextImage() {
-            currentImageIndex = (currentImageIndex + 1) % imagePaths.length;
-            document.getElementById('lightbox-img').src = imagePaths[currentImageIndex];
-        }
-
-        function prevImage() {
-            currentImageIndex = (currentImageIndex - 1 + imagePaths.length) % imagePaths.length;
-            document.getElementById('lightbox-img').src = imagePaths[currentImageIndex];
-        }
-
-        function handleSwipe(event) {
-            const touch = event.changedTouches[0];
-            if (event.type === 'touchstart') {
-                this.startX = touch.pageX;
-            } else if (event.type === 'touchend') {
-                const diffX = touch.pageX - this.startX;
-                if (diffX > 50) prevImage();
-                if (diffX < -50) nextImage();
-            }
-        }
-    </script>
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <h1>Portfolio</h1>
-            <p>Showcasing our best work</p>
+        <div class="portfolio-header">
+            <h1>Pretty Galaxy SA Portfolio</h1>
+            <p>Showcasing the Art of Flawless Makeup</p>
         </div>
+
         <div class="portfolio">
-            <img src="portfolio/1.jpg" alt="Makeup Portfolio" onclick="openLightbox('portfolio/1.jpg')">
-            <img src="portfolio/2.jpg" alt="Makeup Portfolio" onclick="openLightbox('portfolio/2.jpg')">
-            <img src="portfolio/3.jpg" alt="Makeup Portfolio" onclick="openLightbox('portfolio/3.jpg')">
-            <img src="portfolio/4.jpg" alt="Makeup Portfolio" onclick="openLightbox('portfolio/4.jpg')">
-            <img src="portfolio/5.jpg" alt="Makeup Portfolio" onclick="openLightbox('portfolio/5.jpg')">
-            <img src="portfolio/6.jpg" alt="Makeup Portfolio" onclick="openLightbox('portfolio/6.jpg')">
+            <img src="portfolio/1.jpg" alt="Beautiful Makeup - Pretty Galaxy SA">
+            <img src="portfolio/2.jpg" alt="Stunning Bridal Makeup - Pretty Galaxy SA">
+            <img src="portfolio/3.jpg" alt="Soft Glam Makeup - Pretty Galaxy SA">
+            <img src="portfolio/4.jpg" alt="Face Beat Makeup - Pretty Galaxy SA">
+            <img src="portfolio/5.jpg" alt="Natural Radiance - Pretty Galaxy SA">
+            <img src="portfolio/6.jpg" alt="Professional Makeup - Pretty Galaxy SA">
+            <img src="portfolio/7.jpg" alt="Glamorous Evening Look - Pretty Galaxy SA">
+            <img src="portfolio/8.jpg" alt="Bridal Glow - Pretty Galaxy SA">
+            <img src="portfolio/9.jpg" alt="Natural Beauty - Pretty Galaxy SA">
         </div>
-        <div id="lightbox" class="lightbox" onclick="closeLightbox()" ontouchstart="handleSwipe(event)" ontouchend="handleSwipe(event)">
-            <span class="lightbox-controls">
-                <span onclick="prevImage()">❮</span>
-                <span onclick="nextImage()">❯</span>
-            </span>
-            <img id="lightbox-img" src="" alt="">
-        </div>
+
         <div class="back-to-home">
             <a href="index.html">Back to Home</a>
         </div>
