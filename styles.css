@@ -73,6 +73,18 @@ body {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
+/* Portfolio Image Styles */
+.portfolio img {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
 /* Blog Post Styles */
 .blog-container {
     display: grid;
@@ -179,15 +191,4 @@ body {
     background-color: #FFFFFF;
     color: #B76E79;
     border-color: #FFFFFF;
-}
-/* Portfolio Image Styles */
-.portfolio img {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    object-fit: cover;
 }
