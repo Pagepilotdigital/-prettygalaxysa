@@ -3,12 +3,12 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #fffaf9;
+  background-color: #B76E79;
   color: #333;
 }
 
 a {
-  color: #b36e87;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -26,20 +26,22 @@ img {
 /* Header & Footer */
 .site-header,
 .site-footer {
-  background-color: #fce4ec;
+  background-color: #a75b66;
   text-align: center;
   padding: 20px;
+  color: #fff;
 }
 
 nav a {
   margin: 0 12px;
   font-weight: bold;
+  color: #fff;
 }
 
 /* Services Grid */
 .services-section {
   padding: 40px 20px;
-  background-color: #fff0f5;
+  background-color: #b86e78;
 }
 
 .services-grid {
@@ -51,7 +53,7 @@ nav a {
 }
 
 .service-card {
-  background-color: #ffffff;
+  background-color: #fff;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
@@ -125,6 +127,8 @@ nav a {
   max-width: 800px;
   margin: 0 auto;
   background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .blog-banner-img {
