@@ -1,189 +1,120 @@
-/* Reset & Base */
+/* Base Styles */
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #B76E79;
-  color: #333;
+  font-family: 'Georgia', serif;
+  background-color: #B76E79; /* Fixed rose gold background */
+  color: #2D1A1A; /* Deep muted brown for readability */
 }
 
-a {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 10px;
-}
-
-/* Header & Footer */
-.site-header,
-.site-footer {
-  background-color: #a75b66;
-  text-align: center;
+/* Header */
+.site-header {
+  background-color: #fff;
+  color: #B76E79;
   padding: 20px;
-  color: #fff;
+  text-align: center;
 }
 
-nav a {
-  margin: 0 12px;
+.site-header nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #B76E79;
   font-weight: bold;
-  color: #fff;
 }
 
-/* Services Grid */
-.services-section {
-  padding: 40px 20px;
-  background-color: #b86e78;
+/* Footer */
+.site-footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #555;
 }
 
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+/* Service Bubbles */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px;
 }
 
 .service-card {
-  background-color: #fff;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-  text-align: center;
-  transition: transform 0.3s ease;
+  background-color: #F8E6E9; /* Soft luxurious blush */
+  color: #5A2A2A; /* Deep rose */
+  padding: 10px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: inline-block;
+  font-weight: 500;
+  transition: transform 0.2s ease;
 }
 
 .service-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05);
+  background-color: #F3D3D7;
 }
 
-.service-card h3 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-}
-
-.service-card p {
-  font-size: 1em;
-  margin-bottom: 15px;
-}
-
-.service-card a {
-  background-color: #b36e87;
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 6px;
-  display: inline-block;
-  font-weight: bold;
-}
-
-/* Blog List */
-.blog-list {
-  padding: 40px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.blog-card {
-  background-color: #ffffff;
-  border: 1px solid #e0e0e0;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
-.blog-card h3 {
-  margin-top: 0;
-  font-size: 1.4em;
-}
-
-.blog-card p {
-  margin: 10px 0;
-  font-size: 1em;
-  line-height: 1.5;
-}
-
-.blog-card a {
-  font-weight: bold;
-  display: inline-block;
-  margin-top: 10px;
-  color: #b36e87;
-}
-
-/* Blog Post Page */
-.blog-post {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
-}
-
+/* Blog Banner Image */
 .blog-banner-img {
   width: 100%;
   max-width: 800px;
   height: auto;
   display: block;
-  margin: 0 auto 30px;
-  border-radius: 10px;
+  margin: 0 auto 20px auto;
+  border-radius: 15px;
+  object-fit: cover;
 }
 
-.blog-content h2 {
-  font-size: 2em;
-  margin-top: 0;
+/* Blog Post Styling */
+.blog-post {
+  background-color: #FAF3F5; /* Light elegant blush */
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 30px auto;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-.blog-content h3 {
-  margin-top: 30px;
-  font-size: 1.5em;
+/* Blog Headings */
+.blog-post h2 {
+  color: #8C4F55; /* Rich wine tone */
+  font-size: 28px;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
 }
 
-.blog-content p,
-.blog-content ul {
-  font-size: 1em;
+.blog-post h3 {
+  color: #5A2A2A; /* Slightly deeper tone */
+  font-size: 20px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-style: italic;
+}
+
+/* Blog Paragraphs and Lists */
+.blog-post p {
+  font-size: 16px;
   line-height: 1.7;
-  margin-bottom: 20px;
+  color: #3C1E1E;
 }
 
-.blog-content ul {
+.blog-post ul {
   padding-left: 20px;
 }
 
-/* Responsive Tweaks */
-@media screen and (max-width: 768px) {
-  .services-grid,
-  .blog-list,
-  .blog-post {
-    padding: 20px 15px;
-  }
+.blog-post li {
+  margin-bottom: 8px;
+  color: #3C1E1E;
+}
 
-  .service-card,
-  .blog-card {
-    padding: 15px;
-  }
+/* Links */
+a {
+  color: #8C4F55;
+  text-decoration: none;
+}
 
-  .service-card a {
-    padding: 8px 12px;
-    font-size: 0.95em;
-  }
-
-  .blog-content h2 {
-    font-size: 1.5em;
-  }
-
-  .blog-content h3 {
-    font-size: 1.2em;
-  }
+a:hover {
+  text-decoration: underline;
 }
